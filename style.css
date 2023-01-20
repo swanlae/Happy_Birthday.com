@@ -1,0 +1,218 @@
+.{
+  box-sizing: border-box;
+  padding: 0 ;
+  margin: 0 ;
+  border: none;
+  font-family: "segoe UI" ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+nav {
+  background: rgb(236, 190, 197);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 10%;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+.parent_landing {
+  height: 90vh;
+  background-image: url(./1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.parent_landing .content {
+ color: black;
+ width: 80%;
+ margin: 0 auto;
+ display: flex;
+ align-items: center;
+}
+
+.parent_landing .title {
+ font-size: 5rem;
+}
+
+.parent_landing p{
+ font-size: 1rem;
+}
+
+.parent_landing.left-side {
+ width: 50%;
+}
+
+.left_side .buttons {
+ display: flex;
+ padding: 1rem 0;
+}
+
+.left_side .btn1 {
+ padding: 0.5rem 2rem;
+ margin: 00.5rem;
+ cursor: pointer;
+ background-color: pink;
+ border-radius: 30px;
+ border: 1px solid rgb(0, 0, 0);
+ color: black;
+}
+
+.section2 {
+ height: 100vh;
+ width: 90%;
+ margin: 0 auto;
+ padding: 2rem 0;
+}
+
+.section2_title {
+ text-align: center;
+ margin: 0 0 6rem 0;
+ font-size: 2rem;
+}
+
+.section2_content {
+ display: flex;
+ gap: 4rem;
+}
+
+.section2 .service {
+ background-color: rgb(255, 255, 255);
+ color: black;
+ border-radius: 13px;
+ padding: 1rem;
+ text-align: center;
+ max-width: 30%;
+ min-width: 29%;
+ cursor: default;
+ transition: all 0.5s ease-in-out;
+ box-shadow: rgb(0, 0, 0);
+ background-image: url(./3.jpg);
+}
+
+.section2 .service_middle {
+ background-color: rgb(255, 255, 255);
+ color: black;
+}
+
+.section2 .service:hover {
+ transform: scale(1.1);
+ color: black;
+}
+
+.section2 .service:hover button {
+  background-color: transparent;
+  outline: 2px solid black;
+  font-weight: bold;
+  color: black;
+}
+
+.section2 .service button:hover {
+  background-color: pink;
+  color: rgb(0, 0, 0);
+  outline: none;
+} 
+
+.section2 .service h1 {
+  padding-bottom: 1.2rem;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+
+.section2 .service_middle h1 {
+  border-bottom: 1px solid black;
+}
+
+.section2 .service p {
+  padding: 1rem;
+}
+
+.section2 .service button {
+ padding: 0.5rem 5rem;
+ cursor: pointer;
+ font-size: 1rem;
+ margin: 1.5rem;
+ border-radius: 30px;
+ background-color: transparent;
+ color: rgb(0, 0, 0);
+ transition: all 0.3s ease-in-out;
+}
+
+
+*.Click_me {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #ecf4fb;
+}
+
+.Click_me {
+  width: 80%;
+  box-shadow: 20px;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.Click_me img {
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 30px;
+  transition: 0.4s;
+}
+
+.Click_me img:hover{
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68,77,136, 0.2);
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.full-img img {
+  width: 80%;
+  max-width: 500px;
+}
+
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
