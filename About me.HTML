@@ -1,108 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIZ GAME</title>
-    <link rel="stylesheet" href="About me.css">
-</head>
-<body>
-    
-<h4>Q1. What is my favorite color?</h4><br>
-<input type="radio" name="qusection1" >Red<br>
-<input type="radio" name="qusection1" >Blue<br>
-<input type="radio" name="qusection1" >Purple<br>
-<input type="radio" name="qusection1" >Yellow<br>
-<input type="radio" name="qusection1" id="Correct1">Pink<br>
-
-<h4>Q2. What is my favorite food?</h4><br>
-<input type="radio" name="qusection2" id="Correct2">Adobo<br>
-<input type="radio" name="qusection2" >lumpia<br>
-<input type="radio" name="qusection2" >Barbeque<br>
-<input type="radio" name="qusection2" >Spaghetti<br>
-
-<h4>Q3. What is my Hobby?</h4><br>
-<input type="radio" name="qusection3" id="Correct3">Sleeping<br>
-<input type="radio" name="qusection3" >Reading<br>
-<input type="radio" name="qusection3" >Watching movies<br>
-<input type="radio" name="qusection3" >Studying<br>
-
-<h4>Q4. What app do I use the most?</h4><br>
-<input type="radio" name="qusection4" id="Correct4">Facebok<br>
-<input type="radio" name="qusection4" >Instagram<br>
-<input type="radio" name="qusection4" >Youtube<br>
-<input type="radio" name="qusection4" >Tiktok<br>
-
-<h4>Q5. What is my favorite Sport?</h4><br>
-<input type="radio" name="qusection5" >Volleyball<br>
-<input type="radio" name="qusection5" id="Correct5">Basketball<br>
-<input type="radio" name="qusection5" >Badminton<br>
-<input type="radio" name="qusection5" >Chess<br>
-
-<h4>Q6. What would I like to drink with my friends?</h4><br>
-<input type="radio" name="qusection6" id="Correct6">Beer<br>
-<input type="radio" name="qusection6" >Coke<br>
-<input type="radio" name="qusection6" >Coffee<br>
-<input type="radio" name="qusection6" >Wine<br>
-
-<h4>Q7. What is more important to me?</h4><br>
-<input type="radio" name="qusection7" id="Correct7">Money<br>
-<input type="radio" name="qusection7" >Career<br>
-<input type="radio" name="qusection7" >Love<br>
-<input type="radio" name="qusection7" >Friends<br>
-
-<h4>Q8. Where would I Like to Travel?</h4><br>
-<input type="radio" name="qusection8" >Switzerland<br>
-<input type="radio" name="qusection8" >Amsterdam<br>
-<input type="radio" name="qusection8" id="Correct8">Japan<br>
-<input type="radio" name="qusection8" >Hong-kong<br>
-
-<h3><input type="Submit" name="Submit" value="Submit" onclick="result()"></h3>
-
-<script type="">
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>QUIZ GAME</title> 
+  <link rel="stylesheet" href="About me.css"> 
+ </head> 
+ <body> 
+  <h4>Q1. What is my favorite color?</h4> 
+  <br> 
+  <input type="radio" name="qusection1">Red 
+  <br> 
+  <input type="radio" name="qusection1">Blue 
+  <br> 
+  <input type="radio" name="qusection1">Purple 
+  <br> 
+  <input type="radio" name="qusection1">Yellow 
+  <br> 
+  <input type="radio" name="qusection1" id="Correct1">Pink 
+  <br> 
+  <h4>Q2. What is my favorite food?</h4> 
+  <br> 
+  <input type="radio" name="qusection2" id="Correct2">Adobo 
+  <br> 
+  <input type="radio" name="qusection2">lumpia 
+  <br> 
+  <input type="radio" name="qusection2">Barbeque 
+  <br> 
+  <input type="radio" name="qusection2">Spaghetti 
+  <br> 
+  <h4>Q3. What is my Hobby?</h4> 
+  <br> 
+  <input type="radio" name="qusection3" id="Correct3">Sleeping 
+  <br> 
+  <input type="radio" name="qusection3">Reading 
+  <br> 
+  <input type="radio" name="qusection3">Watching movies 
+  <br> 
+  <input type="radio" name="qusection3">Studying 
+  <br> 
+  <h4>Q4. What app do I use the most?</h4> 
+  <br> 
+  <input type="radio" name="qusection4" id="Correct4">Facebok 
+  <br> 
+  <input type="radio" name="qusection4">Instagram 
+  <br> 
+  <input type="radio" name="qusection4">Youtube 
+  <br> 
+  <input type="radio" name="qusection4">Tiktok 
+  <br> 
+  <h4>Q5. What is my favorite Sport?</h4> 
+  <br> 
+  <input type="radio" name="qusection5">Volleyball 
+  <br> 
+  <input type="radio" name="qusection5" id="Correct5">Basketball 
+  <br> 
+  <input type="radio" name="qusection5">Badminton 
+  <br> 
+  <input type="radio" name="qusection5">Chess 
+  <br> 
+  <h4>Q6. What would I like to drink with my friends?</h4> 
+  <br> 
+  <input type="radio" name="qusection6" id="Correct6">Beer 
+  <br> 
+  <input type="radio" name="qusection6">Coke 
+  <br> 
+  <input type="radio" name="qusection6">Coffee 
+  <br> 
+  <input type="radio" name="qusection6">Wine 
+  <br> 
+  <h4>Q7. What is more important to me?</h4> 
+  <br> 
+  <input type="radio" name="qusection7" id="Correct7">Money 
+  <br> 
+  <input type="radio" name="qusection7">Career 
+  <br> 
+  <input type="radio" name="qusection7">Love 
+  <br> 
+  <input type="radio" name="qusection7">Friends 
+  <br> 
+  <h4>Q8. Where would I Like to Travel?</h4> 
+  <br> 
+  <input type="radio" name="qusection8">Switzerland 
+  <br> 
+  <input type="radio" name="qusection8">Amsterdam 
+  <br> 
+  <input type="radio" name="qusection8" id="Correct8">Japan 
+  <br> 
+  <input type="radio" name="qusection8">Hong-kong 
+  <br> 
+  <h3><input type="Submit" name="Submit" value="Submit" onclick="result()"></h3> 
+  <script type="">
     function result() {
-        var score=0;
-        if ( document.getElementById('Correct1').checked)
-         {
+        var score = 0;
+        for (var i = 1; i <= 8; i++) {
+          if (document.getElementById('Correct' + i).checked) {
             score++;
-         }    
-         if ( document.getElementById('Correct2').checked)
-         {
-            score++;
-         }
-         if ( document.getElementById('Correct3').checked)
-         {
-            score++;
-         }
-         if ( document.getElementById('Correct4').checked)
-         {
-            score++;
-         }
-         if ( document.getElementById('Correct5').checked)
-         {
-            score++;
-         }
-          if ( document.getElementById('Correct6').checked)
-         {
-            score++;
-         }
-         if ( document.getElementById('Correct7').checked)
-         {
-            score++;
-         }
-          if ( document.getElementById('Correct8').checked)
-         {
-            score++;
-         }
-
-         document.write("Score:"+score);
-         
-         
-
+          } 
+        }
+        
+        document.write('Score: ' + score + '<br>');
+        
+        // Creating button element
+        var button = document.createElement('BUTTON');
+        
+        // Creating text to be displayed on button       
+        var text = document.createTextNode('Try Again');
+        
+        // Appending text to button
+        button.appendChild(text);  
+        
+        // Adding event listener when button was clicked
+        button.addEventListener('click', () => {
+          // Reloading the page (Not exactly reloading... nvm)
+          window.location.href = window.location.href;
+        });
+        
+        // Appending button to document
+        document.body.appendChild(button);
     }
-</script>
-
-
-</body>
+</script> 
+ </body>
 </html>
